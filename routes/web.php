@@ -30,3 +30,4 @@ Route::get('edit/{id}', [HomeController::class, 'edit' ])->name('edit');
 Route::post('edit/{id}', [HomeController::class, 'update' ])->name('update');
 
 Route::get('delete/{id}', [HomeController::class, 'destroy' ])->name('destroy');
+

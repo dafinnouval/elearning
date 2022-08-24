@@ -13,8 +13,8 @@ class Course extends Model
     protected $fillable = ['id', 'coursename',];
 
 
-    public function idcourse() 
+    public function course() 
 	{
-		return $this->hasOne(CourseAssignment::class);
+		return $this->hasMany(CourseAssignment::class);
 	}
 }

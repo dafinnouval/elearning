@@ -15,37 +15,37 @@ class AssignTableSeeder extends Seeder
     {
         $assign = [
             [
-            'assignmentname' => 'Assignment 1',
+            'assign_name' => 'assign_t 1',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'Quiz',
+            'assign_name' => 'Quiz',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'Submission',
+            'assign_name' => 'Submission',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'assignmentname',
+            'assign_name' => 'assignmentname',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'C++ Programming',
+            'assign_name' => 'C++ Programming',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'Art and Design',
+            'assign_name' => 'Art and Design',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],
             [
-            'assignmentname' => 'Art History',
+            'assign_name' => 'Art History',
             'created_at' => new \DateTime,
             'updated_at' => null,
             ],

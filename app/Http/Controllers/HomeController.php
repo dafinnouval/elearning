@@ -13,8 +13,7 @@ class HomeController extends Controller
         // $datas = $request->$data;
         // $data = Course::get();
         $data = CourseAssignment::with('assign','course')->orderBy('id','asc')->paginate(10);
-        dd($data);
-        // $data = CourseAssignment::orderBy('id','desc')->paginate(5);
+        
         return view('index', compact('data'));
     }
 

@@ -14,10 +14,19 @@ class CourseAssignment extends Model
     public $timestamps = true;
     protected $fillable = ['id', 'course_id', 'assignment_id'];
 
+    // metode 1 harus memberitahu foreignkey
+    // karna nama function tidak sesuai nama database/foreign
     public function assign()
     {
-        return $this->belongsTo(Assignment::class);
+        return $this->belongsTo(Assignment::class,'assignment_id');
     }
+    // metode 2 tanpa menyebutkan foreignkey assignment_id
+    // sudah otomatis karna nama function sesuai
+    /* public function assignment() */
+    /* { */
+    /*     return $this->belongsTo(Assignment::class); */
+    /* } */
+    
     public function course()
     {
         return $this->belongsTo(Course::class);

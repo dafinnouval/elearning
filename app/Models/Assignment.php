@@ -13,8 +13,8 @@ class Assignment extends Model
     protected $fillable = ['id', 'assign_name'];
 
 
-    public function idassign() 
+    public function assign() 
 	{
-		return $this->hasOne(CourseAssignment::class);
+		return $this->hasMany(CourseAssignment::class);
 	}
 }
